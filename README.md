@@ -4,7 +4,7 @@ A hands-on project demonstrating how to deploy NGINX to Amazon EKS, expose it th
 
 ## Architecture
 
-![Amazon EKS NGINX LoadBalancer architecture](diagrams/architecture-diagram.png)
+![Amazon EKS NGINX LoadBalancer architecture](images/architecture-diagram.png)
 
 > **AWS implementation note:** On EKS, a `Service` of type `LoadBalancer` asks the configured AWS cloud integration/controller to provision an external load balancer. The exact load-balancer type and behavior depend on the cluster's controller and configuration. This project does not assume ALB or NLB.
 
@@ -16,7 +16,7 @@ eks-nginx-loadbalancer/
 │   ├── 00-nginx-deployment.yaml
 │   ├── 01-nginx-service-loadbalancer.yaml
 │   └── 02-readiness-broken.yaml
-├── diagrams/
+├── images/
 │   └── architecture-diagram.png
 ├── docs/
 │   └── troubleshooting.md
