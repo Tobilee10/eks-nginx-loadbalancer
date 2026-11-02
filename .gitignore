@@ -1,0 +1,13 @@
+# Local/editor files
+.DS_Store
+*.swp
+.vscode/
+.idea/
+
+# Local environment and credentials
+.env
+.env.*
+.aws/
+kubeconfig
+*.pem
+*.key
